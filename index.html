@@ -401,6 +401,7 @@ function tampilkanMenu(menu) {
   if (menu === "penduduk") {
   /* Mengecek apakah nilai parameter 'menu' sama dengan nilai 'penduduk' */
     content = `
+     <!-- digunakan untuk menentukan konten yang akan ditempilkan dalam halaman web pada saat ditekan pengguna dengan menu penduduk -->
       <h3>Data Penduduk Kecamatan Godean</h3>
       <!-- memberi judul utama untuk bagian data penduduk -->
       <p style="text-align:justify;">Tabel berikut berisi indikator dari jumlah penduduk, kelahiran per tahun, kemarian pertahun, dan kepadatan penduduk.</p>
@@ -423,7 +424,7 @@ function tampilkanMenu(menu) {
       <p>Tabel berikut menampilkan jumlah penduduk, luas wilayah, dan komposisi penduduk laki-laki serta perempuan di setiap desa.</p>
        <!-- membuat teks yang menuliskan penjelasan mengenai tabel di bawah -->
       <table>
-      <!-- script yang digunakan ubtuk membuat struktur tabel -->
+      <!-- script yang digunakan ubtuk membuat struktur tabel penduduk -->
         <tr><th>Desa</th><th>Penduduk</th><th>Luas (km²)</th><th>Laki-laki</th><th>Perempuan</th></tr>
         <tr><td>Sidoagung</td><td>9.230</td><td>3.21</td><td>4.520</td><td>4.710</td></tr>
         <tr><td>Sidoarum</td><td>8.845</td><td>2.98</td><td>4.390</td><td>4.455</td></tr>
@@ -437,22 +438,31 @@ function tampilkanMenu(menu) {
   } 
   else if (menu === "geografi") {
     content = `
+     <!-- digunakan untuk menentukan konten yang akan ditempilkan dalam halaman web pada saat ditekan pengguna dengan menu geografi -->
       <h3>Geografi dan Iklim Kecamatan Godean</h3>
+      <!-- digunakan untuk membuat judul baru  berbentuk teks berupa kondisi geografi.  -->
       <p style="text-align:justify;">Kecamatan Godean terletak di bagian barat Kabupaten Sleman, Daerah Istimewa Yogyakarta, pada koordinat sekitar 7°46′ Lintang Selatan dan 110°18′ Bujur Timur. Wilayah ini memiliki bentuk lahan datar hingga sedikit bergelombang dengan kemiringan yang rendah, sehingga mendukung kegiatan permukiman, pertanian, serta industri kecil seperti produksi genteng di Desa Sidoluhur. Kondisi Topografi daerah Godean,Godean mempunyai Ketinggian < 100 m dari permukaan laut atau sekitar 79,00 mdpl di atas permukaan Kemiringan lahan > 15 – 40 % terdapat di 12 ( dua belas ) Kecamatan luas lereng ini sebesar 3.546 ha atau 6,17 % , lereng > 40 % terdapat di Kecamatan Godean. Secara geografis, Godean berperan penting sebagai kawasan peralihan (peri-urban) antara pusat Kota Yogyakarta dan daerah pedesaan di Sleman bagian barat. Pertumbuhan kawasan yang pesat menyebabkan meningkatnya kebutuhan terhadap lahan dan air tanah, yang menimbulkan tantangan baru dalam pengelolaan sumber daya dan tata ruang. Dari sisi iklim, Godean termasuk wilayah beriklim tropis dengan suhu rata-rata harian berkisar antara 23°C hingga 32°C dan tingkat kelembapan yang tinggi, khususnya pada malam hari. Curah hujan di daerah ini relatif besar, dengan musim hujan terjadi pada bulan Oktober hingga Maret dan musim kemarau berlangsung dari April hingga September. Kondisi tersebut menjadikan Godean memiliki tanah yang subur dan mendukung kegiatan pertanian, tetapi juga rawan terhadap genangan air saat musim penghujan. Secara keseluruhan, karakter geografi yang datar, iklim tropis yang lembap, dan perkembangan wilayah yang cepat menjadikan Godean sebagai kawasan strategis yang memerlukan pengelolaan berkelanjutan agar keseimbangan antara pembangunan ekonomi dan kelestarian lingkungan tetap terjaga.</p>`;
+      <!-- digunakan untu kmembuat suatu paragraf ysng menjelsdksn mengenai kondisi geografi dan iklim, teks tersebut dapat dimasukan kedalam web dengan meratakan paragraf tersebut di sisi kanan dan kiri, sehingga sejajar. -->
   } 
   else if (menu === "pemerintahan") {
     content = `
+     <!-- digunakan untuk menentukan konten yang akan ditempilkan dalam halaman web pada saat ditekan pengguna dengan menu pemerintahan-->
       <h3>Kondisi Pemerintahan Kecamatan Godean</h3>
+      <!-- digunakan untuk membuat judul baru  berbentuk teks berupa kondisi pemerintahan. -->
       <p style="text-align:justify;">Pemerintahan Kecamatan Godean merupakan salah satu unit administratif di bawah Pemerintah Kabupaten Sleman, Daerah Istimewa Yogyakarta, yang berfungsi sebagai penghubung antara pemerintah kabupaten dengan pemerintahan di tingkat desa atau kalurahan. Kantor Kecamatan Godean berlokasi di Jl. Godean Km 9,5, Sidoagung, dan menaungi tujuh desa, yaitu Sidoagung, Sidoarum, Sidoluhur, Sidomulyo, Sidokarto, Sidorejo, dan Sidolaju. Secara kelembagaan, kecamatan ini memiliki struktur pemerintahan yang lengkap dengan pamong desa, pembantu pamong, kepala dukuh, serta perangkat RT dan RW yang tersebar di seluruh wilayah. Struktur administratif yang rapi ini memungkinkan koordinasi pemerintahan berjalan efektif dalam memberikan pelayanan publik, administrasi kependudukan, dan pembangunan masyarakat di tingkat lokal. Sebagai wilayah yang berkembang pesat di bagian barat Sleman, Godean menghadapi dinamika sosial-ekonomi yang kompleks. Urbanisasi dan ekspansi permukiman yang terus meningkat menjadikan Godean sebagai kawasan transisi antara pedesaan dan perkotaan (peri-urban). Hal ini membawa dampak terhadap kebijakan tata ruang dan penataan lahan, karena lahan pertanian yang sebelumnya mendominasi kini mulai beralih fungsi menjadi area perumahan, perdagangan, dan industri kecil. Pemerintah kecamatan berperan penting dalam mengatur keseimbangan antara pembangunan fisik dan pelestarian lingkungan melalui koordinasi dengan perangkat desa dan masyarakat setempat. Dalam penyelenggaraan pemerintahan, Kecamatan Godean juga aktif melaksanakan program partisipatif seperti Musyawarah Perencanaan Pembangunan Desa (Musrenbang) yang melibatkan masyarakat dalam proses perencanaan pembangunan. Kegiatan ini menjadi wadah bagi masyarakat untuk menyampaikan aspirasi dan usulan terkait prioritas pembangunan daerah. Hal tersebut menunjukkan bahwa pemerintahan Godean telah menerapkan prinsip good governance, yaitu transparansi, partisipasi, dan akuntabilitas dalam pelayanan publik.</p>`;
   } 
   else if (menu === "pertanian") {
     content = `
+     <!-- digunakan untuk menentukan konten yang akan ditempilkan dalam halaman web pada saat ditekan pengguna dengan menu pertanian -->
       <h3>Sektor Pertanian Kecamatan Godean</h3>
+      <!-- digunakan untuk membuat judul baru  berbentuk teks berupa kondisi pertanian.  -->
       <p style="text-align:justify;">Kecamatan Godean merupakan salah satu wilayah di Kabupaten Sleman yang masih mempertahankan sektor pertanian sebagai bagian penting dari perekonomian lokalnya. Daerah ini dikenal sebagai sentra produksi padi, bersama kecamatan lain seperti Seyegan, Moyudan, dan Minggir. Data tahun 2024 menunjukkan bahwa Sleman menghasilkan sekitar 178.899 ton padi dari luas panen 29.749 hektare, di mana Godean berkontribusi cukup besar terhadap total tersebut.Selain itu, beberapa kelompok tani di Godean, khususnya di Desa Sidomulyo, telah menerapkan sistem pertanian organik yang terbukti layak secara ekonomi dengan rasio keuntungan (R/C) sebesar 1,48. Pemerintah daerah juga terus mendorong keterlibatan petani muda dan penerapan teknologi pertanian modern guna meningkatkan produktivitas dan efisiensi usaha tani.
 
 Namun, sektor pertanian di Godean menghadapi berbagai tantangan serius. Salah satu masalah utama adalah alih fungsi lahan pertanian menjadi area nonpertanian akibat perkembangan wilayah perkotaan. Dalam periode 2015–2022, tercatat sekitar 122 hektare lahan pertanian di Godean beralih fungsi. Selain itu, sebagian lahan di wilayah Sleman, termasuk Godean, masih tergolong lahan tidur yang belum dimanfaatkan secara optimal.Masalah ketersediaan air dan sistem irigasi juga menjadi faktor pembatas dalam meningkatkan produktivitas, terutama untuk lahan kering yang sangat bergantung pada curah hujan. Data sebelumnya mencatat bahwa luas panen padi sawah di Godean sekitar 3.368 hektare dengan produksi rata-rata 57,40 kuintal per hektare, yang masih bisa ditingkatkan melalui penggunaan varietas unggul dan inovasi teknologi.</p>
             <p style="text-align:justify;">Pertanian masih menjadi sektor penting di Godean, dengan komoditas utama berupa padi, sayur, dan hortikultura. Berikut luas lahan pertanian per desa:</p>
+            <!-- digunakan untu kmembuat suatu paragraf ysng menjelsdksn mengenai kondisi pertanian, teks tersebut dapat dimasukan kedalam web dengan meratakan paragraf tersebut di sisi kanan dan kiri, sehingga sejajar. -->   
       <table>
+      <!-- script yang digunakan ubtuk membuat struktur tabel kondisi pertanian-->
         <tr><th>Desa</th><th>Luas Lahan Pertanian (Ha)</th></tr>
         <tr><td>Sidoagung</td><td>320</td></tr>
         <tr><td>Sidoarum</td><td>295</td></tr>
@@ -462,31 +472,41 @@ Namun, sektor pertanian di Godean menghadapi berbagai tantangan serius. Salah sa
         <tr><td>Sidorejo</td><td>250</td></tr>
         <tr><td>Sidomoyo</td><td>230</td></tr>
       </table>`;
+      <!-- mengakhiri atau menutup script dari tabel pertanian -->
   }
   else if (menu === "sosial") {
     content = `
+  <!-- digunakan untuk menentukan konten yang akan ditempilkan dalam halaman web pada saat ditekan pengguna dengan menu sosial -->
       <h3>Kondisi Sosial Masyarakat Godean</h3>
-      <p style="text-align:justify;">Kecamatan Godean merupakan salah satu wilayah di Kabupaten Sleman dengan karakter sosial yang cukup dinamis. Berdasarkan data tahun 2024, wilayah ini memiliki luas sekitar 26,84 km² dengan jumlah penduduk mencapai 71.919 jiwa, sehingga tingkat kepadatannya mencapai sekitar 1.346 jiwa per km². Angka tersebut menunjukkan bahwa Godean termasuk wilayah dengan komunitas sosial yang padat dan aktif dalam berbagai kegiatan masyarakat.Secara sosial, masyarakat Godean memiliki berbagai kelompok dan organisasi lokal yang cukup berkembang. Misalnya, di Desa Sidoarum terdapat kelompok pembudidaya ikan (pokdakan) yang telah bertransformasi menjadi organisasi yang lebih formal, sedangkan di Desa Sidoluhur terdapat kelompok “Dadapan Sejahtera” yang mengalami perubahan dalam struktur sosial dan ekonomi anggotanya. Hal ini menandakan bahwa masyarakat Godean memiliki kemampuan adaptasi sosial yang baik terhadap perubahan.
+      <!-- digunakan untuk membuat judul baru  berbentuk teks berupa kondisi masyarakat godean. -->
+      <p style="text-align:justify;"> Kecamatan Godean merupakan salah satu wilayah di Kabupaten Sleman dengan karakter sosial yang cukup dinamis. Berdasarkan data tahun 2024, wilayah ini memiliki luas sekitar 26,84 km² dengan jumlah penduduk mencapai 71.919 jiwa, sehingga tingkat kepadatannya mencapai sekitar 1.346 jiwa per km². Angka tersebut menunjukkan bahwa Godean termasuk wilayah dengan komunitas sosial yang padat dan aktif dalam berbagai kegiatan masyarakat.Secara sosial, masyarakat Godean memiliki berbagai kelompok dan organisasi lokal yang cukup berkembang. Misalnya, di Desa Sidoarum terdapat kelompok pembudidaya ikan (pokdakan) yang telah bertransformasi menjadi organisasi yang lebih formal, sedangkan di Desa Sidoluhur terdapat kelompok “Dadapan Sejahtera” yang mengalami perubahan dalam struktur sosial dan ekonomi anggotanya. Hal ini menandakan bahwa masyarakat Godean memiliki kemampuan adaptasi sosial yang baik terhadap perubahan.
 Dari segi pendidikan, Godean memiliki sejumlah fasilitas pendidikan menengah seperti SMP Negeri 1 dan SMP Negeri 3 Godean, yang menunjukkan ketersediaan sarana pendidikan yang cukup memadai. Selain itu, beberapa lembaga sosial dan keagamaan juga aktif dalam kegiatan sosial, seperti Pondok Pesantren Ar-Rahmah di Sidoarum yang berperan dalam meningkatkan kesejahteraan spiritual para lansia melalui kegiatan keagamaan. Namun, di balik berbagai potensi tersebut, terdapat sejumlah tantangan sosial yang perlu diperhatikan. Hasil penelitian di Pasar Godean menunjukkan bahwa sebagian besar pedagang merupakan perempuan dengan tingkat pendapatan rumah tangga yang tergolong rendah, di mana kontribusi pendapatan dari berdagang hanya sekitar 39,74% dari total pendapatan keluarga. Hal ini menggambarkan bahwa sebagian masyarakat masih berada pada tingkat kesejahteraan ekonomi yang terbatas.
 
 Selain itu, perubahan sosial akibat modernisasi dan perkembangan teknologi kadang menimbulkan gesekan dalam hubungan sosial antaranggota masyarakat. Beberapa kelompok seperti pokdakan di Sidoarum dan Sidoluhur mengalami konflik internal yang memengaruhi interaksi sosial mereka. Kondisi ini menunjukkan perlunya penguatan kohesi sosial di tengah perubahan sosial yang terjadi. Dari segi pelayanan sosial dan pendidikan, kualitasnya bervariasi di setiap desa. Beberapa sekolah telah memiliki fasilitas yang baik, namun sebagian lainnya masih perlu peningkatan. Sementara itu, penelitian terhadap kelompok lansia di Desa Sidoagung menunjukkan bahwa kondisi kesehatan dan kemampuan aktivitas dasar belum merata di seluruh wilayah. Urbanisasi juga menjadi faktor penting dalam perubahan sosial di Godean. Lokasinya yang strategis dan dekat dengan pusat Kota Yogyakarta menyebabkan adanya perubahan fungsi lahan dan struktur sosial, sehingga perlu upaya menjaga keseimbangan antara perkembangan wilayah dengan kelestarian kehidupan sosial masyarakat.</p>`;
   }
   else if (menu === "pariwisata") {
   content = `
+  <!-- digunakan untuk menentukan konten yang akan ditempilkan dalam halaman web pada saat ditekan pengguna yang berupa menu pariwisata -->
     <h3>Pariwisata dan Keuangan</h3>
+    <!-- digunakan untuk membuat judul baru  berbentuk teks berupa pariwisata dan keuangan  -->
     <div style="text-align:center; margin-bottom: 15px;">
+    <!-- digunakan untuk membuat wadah baru yang dilengkapi teks dengan kondisi rata tengah dan membuat jarak ksosong 15px di bawah elemen. -->
       <p style="text-align:justify;">
+      <!-- digunakan untuk membuar paragraf teks baru -->
         Kecamatan Godean memiliki potensi wisata yang cukup besar, terutama di wilayah pedesaan dan pertanian. Pemerintah Kabupaten Sleman tengah berupaya mengoptimalkan potensi wisata di wilayah barat, termasuk Godean, yang masih memiliki banyak daya tarik alam dan budaya belum tergarap maksimal.Salah satu contohnya adalah Desa Wisata Sidoakur di Desa Sidokarto, yang dikembangkan sebagai sarana pemberdayaan masyarakat melalui wisata pedesaan. Selain itu, Godean juga memiliki sejumlah wisata kuliner dan rekreasi lokal, seperti Gubuk Makan Iwak Kalen di Desa Mandungan, yang memadukan suasana alam pedesaan dengan pengalaman kuliner khas.Walau potensinya besar, pengembangan pariwisata di Godean masih menghadapi tantangan seperti keterbatasan infrastruktur, promosi, dan partisipasi masyarakat lokal. Oleh karena itu, diperlukan pengembangan wisata yang lebih beragam, seperti wisata edukasi, budaya, dan agro-wisata, agar dapat menarik minat wisatawan sekaligus mendukung perekonomian warga sekitar.
         </p>
+        <!-- digunakan untuk menutup elemen <p> yang ada sebelumnya -->
       <img src="pasar-godean.jpg" alt="Pasar Godean" 
            style="width:60%; max-width:500px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+           <!-- digunakan untuk menambahkan fitur foto yang berisi foto pasar godean dengan kondisi lebar 60%, tinggi 500px, radius 10px, dan bayangan 0 4px 10px. -->
     </div>
     <!-- digunakan untuk menutup elemen <div> sebelumnya -->
     <p style="text-align:justify;">
+    <!-- digunakan untuk membuar paragraf teks baru -->
       Dalam bidang keuangan, Kecamatan Godean menunjukkan perkembangan positif dengan semakin lengkapnya fasilitas dan layanan keuangan. Salah satu langkah penting adalah dibukanya kantor baru Bank Sleman Cabang Godean di Jalan Godean KM 8, yang bertujuan meningkatkan akses dan pelayanan perbankan bagi masyarakat setempat.Selain itu, Pasar Induk Godean yang diresmikan pada tahun 2024 menjadi pusat kegiatan ekonomi utama di kawasan tersebut. Pasar ini dibangun dengan anggaran sekitar Rp 89 miliar dan mampu menampung sekitar 1.800 pedagang, sehingga diharapkan mampu memperkuat aktivitas perdagangan dan perputaran ekonomi lokal.
       Pada tingkat desa, penelitian di Desa Sidorejo menunjukkan bahwa pengelolaan keuangan desa yang baik, termasuk penggunaan dana desa, berperan penting dalam mendukung kesejahteraan masyarakat dan pengentasan kemiskinan. Hal ini menggambarkan pentingnya transparansi dan akuntabilitas dalam tata kelola keuangan desa. Namun, masih ada tantangan yang perlu diperhatikan, seperti pemerataan akses ke lembaga keuangan, peningkatan literasi keuangan masyarakat, dan penguatan sinergi antara sektor ekonomi, pariwisata, dan UMKM. Dengan pengelolaan yang baik, sektor keuangan dapat menjadi motor penggerak ekonomi sekaligus mendukung pengembangan pariwisata di Godean.
     </p>`;
-    <!-- digunakan untuk mengubaj isi konten HTML dari elemen dengan id -->
+    <!-- digunakan untuk menutup elemen <p> yang ada sebelumnya -->
 }
 
   main.innerHTML = `${content}<button class="back-btn" onclick="kembaliKePeta()">⬅ Kembali ke Peta</button>`;
@@ -523,6 +543,7 @@ function kembaliKePeta() {
   <!-- menutup script dari bagian body "badan" -->
 </html>
 <!-- mengakhiri seluruh dokumen HTML -->
+
 
 
 
