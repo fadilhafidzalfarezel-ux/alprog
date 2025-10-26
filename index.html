@@ -355,21 +355,36 @@ Pada tingkat desa, penelitian di Desa Sidorejo menunjukkan bahwa pengelolaan keu
   main.innerHTML = `${content}<button class="back-btn" onclick="kembaliKePeta()">⬅ Kembali ke Peta</button>`;
 }
 
-function kembaliKePeta() {
+function kembaliKePeta() {   
+  // Membuat fungsi dengan nama kembaliKePeta yang akan menampilkan ulang peta Godean pada halaman utama ketika di tekan.
   const main = document.getElementById("main-content");
+  // Mencari elemen HTML dengan id="main-content" dan menyimpannya ke variabel main agar bisa diubah isinya.
   main.innerHTML = `
     <h3>Peta Kecamatan Godean, Kabupaten Sleman</h3>
+    <!-- Menampilkan judul di atas peta -->
     <div class="map-container" id="peta">
+     <!-- Membuat wadah (container) untuk peta agar tampilan lebih rapi dan bisa diatur lewat CSS -->
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31684.68128448019!2d110.30440888317868!3d-7.767069874040815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5989d4e0baf1%3A0x3027a76e352f9b0!2sGodean%2C%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
         allowfullscreen="" loading="lazy">
+        <!-- Menyematkan (embed) peta Google Maps Kecamatan Godean -->
+        <!-- allowfullscreen: mengizinkan tampilan fullscreen -->
+        <!-- loading="lazy": membuat peta dimuat hanya saat dibutuhkan (lebih cepat) -->
       </iframe>
+      <!-- Penutup script pada tombol pengulangan frame peta -->
+      
     </div>
+    <!-- Penutup wadah peta -->
   `;
+  // Mengubah isi elemen dengan id="main-content" menjadi HTML peta di atas.
 }
+  // Menandai akhir fungsi kembaliKePeta()
 </script>
 
 </body>
+  <!-- menutup dari blok kode script -->
 </html>
+<!-- mengakhiri seluruh dokumen HTML -->
+
 
 
