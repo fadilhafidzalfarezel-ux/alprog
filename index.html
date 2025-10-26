@@ -390,15 +390,22 @@
 <!-- sebagai penutup wadah utama (kontainer) yang menampung isi konten utama -->
 
 <script>
+/* menampilkan konten berdasarkan menu yang dipilih */
 function tampilkanMenu(menu) {
   const main = document.getElementById("main-content");
-  let content = "";
+  /* Mengambil elemen HTML dengan id "main-content" untuk menempatkan hasil konten
+  const main */
+    let content = "";
+    /* Membuat variabel kosong untuk menampung isi HTML yang akan ditampilkan nanti */
 
   if (menu === "penduduk") {
+  /* Mengecek apakah nilai parameter 'menu' sama dengan nilai 'penduduk' */
     content = `
       <h3>Data Penduduk Kecamatan Godean</h3>
+      <!-- memberi judul utama untuk bagian data penduduk -->
       <p style="text-align:justify;">Tabel berikut berisi indikator dari jumlah penduduk, kelahiran per tahun, kemarian pertahun, dan kepadatan penduduk.</p>
       <table>
+      <!-- Membuat paragraf pembuka dengan teks yang posisinya rata kanan kiri dan dijelaskan dalam bentuk tabel  -->
         <tr><th>Indikator</th><th>Nilai</th></tr>
         <tr><td>Jumlah Penduduk</td><td>67.543 Jiwa</td></tr>
         <tr><td>Kelahiran per Tahun</td><td>720 Jiwa</td></tr>
@@ -504,6 +511,7 @@ function kembaliKePeta() {
   <!-- menutup script dari bagian body "badan" -->
 </html>
 <!-- mengakhiri seluruh dokumen HTML -->
+
 
 
 
