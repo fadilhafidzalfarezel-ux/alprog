@@ -5,10 +5,15 @@
 <!-- Atribut lang="id" menunjukkan dengan bahasa halaman (Indonesia) -->
   
 <head>
+<!-- Bagian header "kepala" berisi metadata dan pengaturan -->
   
   <meta charset="UTF-8">
+   <!-- Menentukan jenis karakter (UTF-8 agar mendukung semua huruf termasuk simbol dan tanda ) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Mengatur agar tampilan halaman menyesuaikan ukuran layar perangkat -->
   <title>Fadil Hafidz Alfarezel</title>
+  <!-- Memberi judul halaman yang akan muncul pada tab -->
+  
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -183,50 +188,86 @@
       text-decoration: underline;
     }
   </style>
+  <!-- Menutup bagian tanda mengenai bagian berisi kode CSS -->
 </head>
+<!-- menutup agian head "kepala" berisi metadata dan pengaturan -->
 <body>
+<!-- Bagian body "badan" sebagai wadah utama (kontainer) -->
 
 <div class="container">
+<!-- membentuk di sebelah kiri berisi daftar menu sidebar dan konten -->
   <header>
+  <!-- Bagian header "kepala" menampilkan bagian kepala (bagian atas) -->
+    
     <img src="Logo Kabupaten Sleman.png" alt="Logo Sleman">
+    <!-- Bagian untuk menampilkan logo dari kabupaten sleman dan di beri nama logo sleman -->
     <div class="header-text">
+    <!-- menutup agian head "kepala" berisi metadata dan pengaturan -->
+    
       <h1>INFORMASI STATISTIK</h1>
+      <!-- memberikan kalimat pada baris pertama header bertuliskan "Informasi Statistik" -->
       <h2>KECAMATAN GODEAN</h2>
+      <!-- memberikan kalimat pada baris kedua header bertuliskan "Kecamatan Godean" -->
       <h3>KABUPATEN SLEMAN</h3>
+      <!-- memberikan kalimat pada baris Ketiga header bertuliskan "Kabupaten Sleman" -->
     </div>
+    <!-- sebagai wadah (kontainer) yang bersifat umum/semua aspek -->
   </header>
+  <!-- Menutup/menghentikan bagian head "kepala" yang berisi metadata dan pengaturan -->
 
   <div class="content">
+  <!-- sebagai wadah utama (kontainer) yang menampung isi konten utama -->
     <div class="sidebar">
+       <!-- sebagai wadah utama pada bagian menu samping pada halaman web -->
       <ul>
+        <!-- Membuat daftar yang tidak memiliki urutan atau prioritas -->
         <li onclick="tampilkanMenu('penduduk')">Penduduk</li>
+        <!-- ebagai item menuinteraktif dalam daftar nafigasi (<ul>) , ketika di tekan akan menjalankan  script tampilkanmenu('penduduk') untuk menampilkan data atau informasi penduduk -->
         <li onclick="tampilkanMenu('geografi')">Geografi dan Iklim</li>
+        <!-- ebagai item menuinteraktif dalam daftar nafigasi (<ul>) , ketika di tekan akan menjalankan  script tampilkanmenu('geografi') untuk menampilkan data atau informasi penduduk -->
         <li onclick="tampilkanMenu('pemerintahan')">Pemerintahan</li>
+        <!-- ebagai item menuinteraktif dalam daftar nafigasi (<ul>) , ketika di tekan akan menjalankan  script tampilkanmenu('Pemerintahan') untuk menampilkan data atau informasi penduduk -->
         <li onclick="tampilkanMenu('pertanian')">Pertanian</li>
+        <!-- ebagai item menuinteraktif dalam daftar nafigasi (<ul>) , ketika di tekan akan menjalankan  script tampilkanmenu('Pertanian') untuk menampilkan data atau informasi penduduk -->
         <li onclick="tampilkanMenu('sosial')">Sosial</li>
+        <!-- ebagai item menuinteraktif dalam daftar nafigasi (<ul>) , ketika di tekan akan menjalankan  script tampilkanmenu('Sosial') untuk menampilkan data atau informasi penduduk -->
         <li onclick="tampilkanMenu('pariwisata')">Pariwisata dan Keuangan</li>
+        <!-- ebagai item menuinteraktif dalam daftar nafigasi (<ul>) , ketika di tekan akan menjalankan  script tampilkanmenu('pariwisata dan keuangan') untuk menampilkan data atau informasi penduduk -->
       </ul>
+      <!-- Menutup daftar yang tidak memiliki urutan atau prioritas -->
     </div>
+    <!-- sebagai penutup wadah utama (kontainer) yang menampung isi konten utama -->
 
     <div class="main" id="main-content">
       <h3>Peta Kecamatan Godean, Kabupaten Sleman</h3>
+      <!-- digunakan untuk membuat kalimat yang berada di atas peta/maps bertuliskan peta kecamatan godean, kabupaten sleman -->
       <div class="map-container" id="peta">
+      <!-- digunakan sebagai wadah (kontainer) yang digunakan untuk menampilkan peta interaktif google maps yang disematkan pada <iframe> -->
+        
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31684.68128448019!2d110.30440888317868!3d-7.767069874040815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5989d4e0baf1%3A0x3027a76e352f9b0!2sGodean%2C%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
           allowfullscreen="" loading="lazy">
+          <!-- digunakan untuk menampilkan maps dari google maps untuk menunjukan lokasi dari kecamatan godean dan keterangan teks kecamatan godean-->
         </iframe>
+        <!-- digunakan untuk menutup <iframe>, yang berfungsi untuk menyematkan halaman web lain atau konten -->
       </div>
     </div>
   </div>
 
   <footer>
+  <!-- menampilkan informasi bagian bawah (penutup) pada halaman web -->
     <img src="sleman-sembada-138040.png" alt="Logo Sleman">
+    <!-- digunakan untuk menampilkan foto berupa logo sleman sembada yang dapat dinamakan sebagai logo sleman -->
     <p><b>Pemerintah Kabupaten Sleman</b><br>
+    <!-- membuat kalimat/ paragraf yang digunakan untuk footer pada kalimat pertama yang bertuliskan pemerintahan kabupaten sleman -->
       Jl. Parasamya, Sleman, Daerah Istimewa Yogyakarta, Kode Pos 55511<br>
       Telp: (0274) 868405 — Website: 
       <a href="https://sleman.go.id" target="_blank">https://sleman.go.id</a>
+      <!-- Menambahkan kalimat/paragraf yang berasal dari link/ sumber yang berupa https://sleman.go,id, selain itu memberikan informasi tambahan dapat berupa alamat, nomor pos, dan nomor pemerintahan -->
     </p>
+    <!-- menutup script/perintah pada saat pembuatan kalimat atan paragraf -->
   </footer>
+  <!-- menutup script/perintah untuk menampilkan informasi bagian bawah (penutup) pada halaman web -->
 </div>
 
 <script>
@@ -330,4 +371,5 @@ function kembaliKePeta() {
 
 </body>
 </html>
+
 
