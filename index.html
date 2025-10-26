@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- Deklarasi tipe dokumen HTML -->
+<!-- Meneklarasikan tipe dokumen HTML -->
 <html lang="id">
 <!-- Elemen utama yang membungkus seluruh halaman HTML -->
-<!-- Atribut lang="id" menunjukkan dengan bahasa halaman (Indonesia) -->
+<!-- Membuat atribut lang="id" menunjukkan dengan bahasa halaman (Indonesia) -->
   
 <head>
 <!-- Bagian header "kepala" berisi metadata dan pengaturan -->
@@ -14,178 +14,293 @@
   <title>Fadil Hafidz Alfarezel</title>
   <!-- Memberi judul halaman yang akan muncul pada tab -->
   
-  <style>
+  <style>  
+    /* Mengatur tampilan dasar seluruh halaman */
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #6562a1;
-      color: #000;
-      overflow-x: hidden;
+      font-family: Arial, sans-serif; 
+      /* Mengatur jenis huruf (Font) */
+      margin: 0; 
+      /* mengatur jarak luar default menjadi nol */
+      padding: 0; 
+      /* Mengatur jarak dalam default menjadi nol */
+      background-color: #6562a1; 
+      /* Mengatur warna latar belakang utama halaman */
+      color: #000; 
+      /* Mengatur warna teks default hitam */
+      overflow-x: hidden; 
+      /* Mencegah scroll horizontal */
     }
 
-    .container {
-      border: 1px solid #000;
-      margin: 20px auto;
-      width: 850px;
-      background-color: #fff;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-      border-radius: 8px;
+    .container { 
+      /* Kontainer utama yang membungkus seluruh isi halaman */
+      border: 1px solid #000; 
+      /* Membuat garis tepi hitam */
+      margin: 20px auto; 
+      /* Mengatur tengah horizontal dengan jarak atas-bawah 20px */
+      width: 850px; 
+      /* Mengatur lebar halaman utama */
+      background-color: #fff; 
+      /* Mengatur latar belakang menjadi warna putih */
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15); 
+      /* Mengatur bayangan agar tampak timbul */
+      border-radius: 8px;  
+      /* Membuat sudut membulat */
       overflow: hidden;
-    }
+      /* Menyembunyikan elemen yang keluar batas */
+    }  
 
     header {
+      /* Bagian header di atas halaman */
       display: flex;
+      /* Gunakan flexbox agar display sejajar horizontal */
       align-items: center;
+      /* Mengatur agar Rata tengah vertikal */
       justify-content: center;
+      /* mengatur agar Rata tengah horizontal */
       border-bottom: 3px solid #004080;
+      /* membuat Garis bawah menjadi warna  biru */
       padding: 15px;
+      /* Jarak dalam */
       background-color: #e6f0ff;
+      /* Mengubah backgroun menjadi warna biru muda */
       gap: 15px;
+      /* Membuat jarak antar elemen di dalam header */
     }
 
     header img {
+       /* Logo di header */
       width: 80px;
+      /* Mengatur ukuran lebar gambar logo */
       height: auto;
+      /* Mengatur ukuran tinggi gambar logo */
     }
 
     .header-text {
+      /* Teks judul dan subjudul di header */
       text-align: center;
+      /* membuat judul pada header menjadi Rata tengah */
     }
 
     .header-text h1 {
+      /* Teks judul dan subjudul di header pada kalimat 1 atau baris 1*/
       margin: 0;
+      /* Mengatur tengah horizontal dengan jarak atas-bawah menjadi 0 */
       font-size: 24px;
+      /* Mengubah ukuran huruf besar untuk judul menjadi 24px*/
       font-weight: bold;
+      /* Membuat teks menjadi tebal */
       color: #002060;
+      /* Mengubah font menjadi warna biru tua */
       letter-spacing: 1px;
+      /* Mengatur jarak antar huruf menjadi 1px */
     }
 
     .header-text h2 {
+      /* Teks judul dan subjudul di header pada kalimat 2 atau baris 2*/
       margin: 2px 0 0 0;
+      /* Mengatur tengah horizontal dengan jarak atas-bawah menjadi 2px 0 0 0 */
       font-size: 16px;
+       /* Mengubah ukuran huruf besar untuk judul menjadi 16px */
       color: #003366;
+      /* Mengubah warna  menjadi biru sedang */
+
     }
 
     .content {
+      /* Area isi utama (isi pokok) setelah header */
       display: flex;
+      /* Layout dua kolom (sidebar + main) */
       background-color: #ffffff;
     }
 
     .sidebar {
+      /* Kolom kiri: kolom sidebar menu */
       width: 25%;
+      /* Mengubah lebar sidebar menjadi 1/4 dari total halaman */
       border-right: 1px solid #004080;
+      /* Garis pemisah kanan menjadi 1px */
       background-color: #f5f9ff;
+      /* Mengubah warna menjadi biru muda */
       padding: 15px;
+      /* Mengubah Jarak dalam menjadi 15px */
     }
 
     .sidebar ul {
+      /* Mengatur daftar menu di sidebar */
       list-style: none;
+      /* Menghapus tanda bullet */
       padding-left: 0;
+      /* Menghapus jarak kiri */
     }
 
     .sidebar li {
       margin-bottom: 10px;
+      /* Jarak antar menu menjadi 10px */
       font-weight: bold;
+      /* membuat Huruf sidebar menjadi huruf tebal */
       color: #003366;
+      /* Mengubah warna teks biru */
       cursor: pointer;
+      /* Membuat kursor Saat diarahkan, jadi pointer (klik) */
       transition: 0.3s;
+      /*  Menambahkan Animasi halus saat hover menjadi 0.3s */
     }
 
     .sidebar li:hover {
       color: #0066cc;
+      /* Mengubah warna teks berubah saat hover */
       transform: translateX(4px);
+      /* Mengubah posisi teks menjadi sedikit bergeser ke kanan */
     }
 
     .main {
+      /* Kolom kanan: area konten utama */
       width: 75%;
+      /* Membuat Lebar area  konten utama menjadi 3/4 halaman */
       padding: 20px;
+       /* Mengubah Jarak dalam menjadi 20px */
       text-align: center;
+       /* Mengubah posisi teks menjadi center (tengah) */
       background-color: #ffffff;
       position: relative;
+       /* Mengubah posisi teks menjadi relative */
     }
 
     .map-container {
       width: 100%;
+      /* Membuat lebar kontainer mengikuti lebar elemen induk menjadi 100% */
       height: 400px;
+      /* Menentukan tinggi area peta  menjadi 40000px*/
       border: 2px solid #004080;
+      /* Memberi garis tepi berwarna biru tua */
       border-radius: 8px;
+      /* Membulatkan sudut kontainer agar lebih lembut dengan radius 8px */
       overflow: hidden;
+      /* Menyembunyikan bagian elemen anak yang tidak diperlukan */
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      /* Memberi efek bayangan lembut agar tampak timbul menjadi 0 0 0 0 1 */
     }
 
     iframe {
+      /* Mengatur tampilan iframe (biasanya digunakan untuk menampilkan peta Google Maps) */
       width: 100%;
+      /* Membuat lebar penuh mengikuti kontainer menjadi 100%*/
       height: 100%;
+      /* Membuat tinggi penuh mengikuti kontainer menjadi 100% */
       border: none;
+      /* Menghapus garis tepi default pada iframe */
     }
 
     table {
+    /* Mengatur gaya umum untuk tabel data */
       width: 100%;
+      /* Tabel memenuhi area lebar halaman menjadi 100% */
       border-collapse: collapse;
+      /* Menghilangkan jarak antar garis tabel */
       text-align: center;
+      /* Teks dalam tabel diratakan ke tengah (center) */
       background-color: #f0f0f0;
+      /* Warna latar belakang tabel abu-abu muda */
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      /* Menambahkan bayangan agar tampak mengambang dengan nilai 0 0 0 0 1 */
       border-radius: 8px;
+      /* Membuat sudut tabel sedikit membulat dengan total radius 8px */
       margin-top: 20px;
+      /* Memberi jarak antara tabel dan elemen di atasnya dengan nilai 20px */
     }
 
     th, td {
+    /* Untuk mengatur tampilan untuk sel header dan isi tabel */
       border: 1px solid #004080;
+       /* Memberi garis tepi berwarna biru dengan ukuran 1px */
       padding: 10px;
+      /* Memberi jarak antara teks dan garis tepi dengan jarak 10px */
       font-size: 14px;
+      /* Ukuran teks agar mudah dibaca dengan ukuran 14px */
     }
 
     th {
+    /* menampilkan khusus untuk sel header tabel */
       background-color: #cce0ff;
+      /* Memberikan warna biru muda untuk pembeda header */
       color: #002060;
+      /* Warna teks menjadi warna biru tua */
     }
 
     tr:nth-child(even) {
+    /* Mengatur warna baris tabel genap agar bergantian */
       background-color: #f2f7ff;
+      /* Membuat warna biru sangat muda untuk efek zebra */
     }
 
     tr:hover {
+    /* Efek hover (ketika kursor diarahkan ke baris tabel) */
       background-color: #d6e6ff;
+      /* Warna biru lebih terang untuk efek interaktif */
     }
 
     .back-btn {
+    /* Gaya untuk tombol "Kembali ke Peta" */
       background-color: #004080;
+      /* Membuat warna latar tombol menjadi biru tua */
       color: white;
+      /* Membuat warna teks menjadi putih */
       border: none;
+      /* Menghapus garis tepi tombol */
       border-radius: 5px;
+      /* Membulatkan sudut tombol dengan radius 5px*/
       padding: 8px 16px;
+      /* Memberi jarak dalam tombol (atas-bawah & kiri-kanan) dengan jarak 8px dan 16px*/
       cursor: pointer;
+      /* Mengubah kursor jadi tangan saat diarahkan dan ditekan */
       margin-top: 20px;
+      /* Memberi jarak tombol dari elemen di atasnya dengan jarak 20px */
       font-size: 14px;
+      /* Ukuran teks tombol dengan ukuran 14px */
       transition: 0.3s;
+      /* Efek transisi halus saat hover dengan efek transisi 0.3s */
     }
 
     .back-btn:hover {
+    /* (Opsional) Tambahkan efek hover agar tombol berubah warna saat diarahkan */
       background-color: #0066cc;
+      /* Mengubah warna biru menjadi warna yang lebih cerah saat hover */
     }
 
     footer {
+    /* Bagian bawah halaman */
       border-top: 2px solid #004080;
+      /* Menambahkan garis biru tua di bagian atas footer sebagai pembatas dengan batas 2px*/
       text-align: center;
+      /* Membuat semua isi footer rata tengah (center) */
       padding: 15px;
+      /* Memberi jarak di dalam footer agar tidak terlalu rapat dengan jarak 15px */
       font-size: 12px;
+      /* Mengatur ukuran teks di footer agar lebih kecil dengan ukuran font 12px */
       background-color: #e6f0ff;
+      /* Warna latar belakang biru muda agar selaras dengan tema halaman */
       color: #002060;
+      /* Warna teks biru tua agar mudah dibaca di atas latar muda */
     }
 
     footer img {
+    /* Membuat gambar dalam footer(halaman bawah) */
       width: 80px;
+      /* Menentukan lebar gambar/logo di footer dengan lebar 80px */
       margin-bottom: 5px;
+      /* Memberi sedikit jarak antara gambar dan teks di bawahnya dengan jarak 5px */
     }
 
     a {
       color: #0033cc;
+      /* Warna teks tautan biru agar mudah dibaca */
       text-decoration: none;
+      /* Menghilangkan garis bawah default pada link */
     }
 
     a:hover {
       text-decoration: underline;
+      /* Saat kursor diarahkan ke link, garis bawah muncul agar interaktif */
     }
   </style>
   <!-- Menutup bagian tanda mengenai bagian berisi kode CSS -->
@@ -251,8 +366,11 @@
         </iframe>
         <!-- digunakan untuk menutup <iframe>, yang berfungsi untuk menyematkan halaman web lain atau konten -->
       </div>
+      <!-- sebagai penutup wadah utama (kontainer) yang menampung isi konten utama -->
     </div>
+    <!-- sebagai penutup wadah utama (kontainer) yang menampung isi konten utama -->
   </div>
+  <!-- sebagai penutup wadah utama (kontainer) yang menampung isi konten utama -->
 
   <footer>
   <!-- menampilkan informasi bagian bawah (penutup) pada halaman web -->
@@ -269,6 +387,7 @@
   </footer>
   <!-- menutup script/perintah untuk menampilkan informasi bagian bawah (penutup) pada halaman web -->
 </div>
+<!-- sebagai penutup wadah utama (kontainer) yang menampung isi konten utama -->
 
 <script>
 function tampilkanMenu(menu) {
@@ -380,11 +499,12 @@ function kembaliKePeta() {
 }
   // Menandai akhir fungsi kembaliKePeta()
 </script>
-
+<!-- menutup dari blok kode script -->
 </body>
-  <!-- menutup dari blok kode script -->
+  <!-- menutup script dari bagian body "badan" -->
 </html>
 <!-- mengakhiri seluruh dokumen HTML -->
+
 
 
 
