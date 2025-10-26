@@ -407,14 +407,23 @@ function tampilkanMenu(menu) {
       <table>
       <!-- Membuat paragraf pembuka dengan teks yang posisinya rata kanan kiri dan dijelaskan dalam bentuk tabel  -->
         <tr><th>Indikator</th><th>Nilai</th></tr>
+        <!-- membuat tabel mengenai indikator dan masing-masing nilai dari indikator tersebut -->
         <tr><td>Jumlah Penduduk</td><td>67.543 Jiwa</td></tr>
+         <!-- membuat tabel baris pertama diisi oleh jumlah penduduk dan kolom ke 2 diisi oleh jumlah jiwa 67.543 Jiwa -->
         <tr><td>Kelahiran per Tahun</td><td>720 Jiwa</td></tr>
+        <!-- membuat tabel pada baris kedua diisi oleh jumlah kelahiran dan pada kolom kedua diisi oleh jumlah kelahirannnya 720 Jiwa  -->
         <tr><td>Kematian per Tahun</td><td>410 Jiwa</td></tr>
+        <!-- membuat baris ketiga pada tabel diisi oleh jumlah kematian per tahum dan pada kolom diberikan jumlah dari nilai kematiannya 410 jiwa -->
         <tr><td>Kepadatan Penduduk</td><td>4.523 Jiwa/km²</td></tr>
+        <!-- membuat baris keempat dan di isi oleh kepadatan penduduk dan pada kolom kedua diisi oleh jumlah kepadatanya yaitu 4.523 jiwa -->
       </table>
+      <!-- mengakhiri atau menutup script dari tabel penduduk -->
       <h3>Penduduk per Desa</h3>
+      <!-- membuat kalimat yang berfungsi untuk membuat title atau header -->
       <p>Tabel berikut menampilkan jumlah penduduk, luas wilayah, dan komposisi penduduk laki-laki serta perempuan di setiap desa.</p>
+       <!-- membuat teks yang menuliskan penjelasan mengenai tabel di bawah -->
       <table>
+      <!-- script yang digunakan ubtuk membuat struktur tabel -->
         <tr><th>Desa</th><th>Penduduk</th><th>Luas (km²)</th><th>Laki-laki</th><th>Perempuan</th></tr>
         <tr><td>Sidoagung</td><td>9.230</td><td>3.21</td><td>4.520</td><td>4.710</td></tr>
         <tr><td>Sidoarum</td><td>8.845</td><td>2.98</td><td>4.390</td><td>4.455</td></tr>
@@ -424,6 +433,7 @@ function tampilkanMenu(menu) {
         <tr><td>Sidorejo</td><td>6.820</td><td>2.48</td><td>3.360</td><td>3.460</td></tr>
         <tr><td>Sidomoyo</td><td>7.315</td><td>2.64</td><td>3.600</td><td>3.715</td></tr>
       </table>`;
+    <!-- script yang digunakan ubtuk membuat struktur tabel -->
   } 
   else if (menu === "geografi") {
     content = `
@@ -471,14 +481,16 @@ Selain itu, perubahan sosial akibat modernisasi dan perkembangan teknologi kadan
       <img src="pasar-godean.jpg" alt="Pasar Godean" 
            style="width:60%; max-width:500px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
     </div>
+    <!-- digunakan untuk menutup elemen <div> sebelumnya -->
     <p style="text-align:justify;">
       Dalam bidang keuangan, Kecamatan Godean menunjukkan perkembangan positif dengan semakin lengkapnya fasilitas dan layanan keuangan. Salah satu langkah penting adalah dibukanya kantor baru Bank Sleman Cabang Godean di Jalan Godean KM 8, yang bertujuan meningkatkan akses dan pelayanan perbankan bagi masyarakat setempat.Selain itu, Pasar Induk Godean yang diresmikan pada tahun 2024 menjadi pusat kegiatan ekonomi utama di kawasan tersebut. Pasar ini dibangun dengan anggaran sekitar Rp 89 miliar dan mampu menampung sekitar 1.800 pedagang, sehingga diharapkan mampu memperkuat aktivitas perdagangan dan perputaran ekonomi lokal.
-
-Pada tingkat desa, penelitian di Desa Sidorejo menunjukkan bahwa pengelolaan keuangan desa yang baik, termasuk penggunaan dana desa, berperan penting dalam mendukung kesejahteraan masyarakat dan pengentasan kemiskinan. Hal ini menggambarkan pentingnya transparansi dan akuntabilitas dalam tata kelola keuangan desa. Namun, masih ada tantangan yang perlu diperhatikan, seperti pemerataan akses ke lembaga keuangan, peningkatan literasi keuangan masyarakat, dan penguatan sinergi antara sektor ekonomi, pariwisata, dan UMKM. Dengan pengelolaan yang baik, sektor keuangan dapat menjadi motor penggerak ekonomi sekaligus mendukung pengembangan pariwisata di Godean.
+      Pada tingkat desa, penelitian di Desa Sidorejo menunjukkan bahwa pengelolaan keuangan desa yang baik, termasuk penggunaan dana desa, berperan penting dalam mendukung kesejahteraan masyarakat dan pengentasan kemiskinan. Hal ini menggambarkan pentingnya transparansi dan akuntabilitas dalam tata kelola keuangan desa. Namun, masih ada tantangan yang perlu diperhatikan, seperti pemerataan akses ke lembaga keuangan, peningkatan literasi keuangan masyarakat, dan penguatan sinergi antara sektor ekonomi, pariwisata, dan UMKM. Dengan pengelolaan yang baik, sektor keuangan dapat menjadi motor penggerak ekonomi sekaligus mendukung pengembangan pariwisata di Godean.
     </p>`;
+    <!-- digunakan untuk mengubaj isi konten HTML dari elemen dengan id -->
 }
 
   main.innerHTML = `${content}<button class="back-btn" onclick="kembaliKePeta()">⬅ Kembali ke Peta</button>`;
+  <!-- digunakan untuk mengubaj isi konten HTML dari elemen dengan id -->
 }
 
 function kembaliKePeta() {   
@@ -511,6 +523,7 @@ function kembaliKePeta() {
   <!-- menutup script dari bagian body "badan" -->
 </html>
 <!-- mengakhiri seluruh dokumen HTML -->
+
 
 
 
